@@ -1,0 +1,349 @@
+:root{
+    --main-color-text:#1c1c1c;
+    --main-color:#0078FF;
+    --main-transition:0.4s;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #f7f7f7;
+}
+.line-height{
+    line-height: 1.9;
+}
+.bg-grey{
+    background-color: #727171;
+}
+html{
+    scroll-padding-top: 90px;
+}
+.BgColour{
+    background-color: white;
+}
+.nav-link{
+        color: #fefbfb;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+.main-color{
+    --bs-nav-link-color: white;
+}
+.background-main-color{
+    background-color: var(--main-color-text);
+}
+@media (min-width:992px){
+    .nav-item a.active::before{
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        bottom: 5px;
+        background-color: white;
+        }
+}
+@media (max-width:992px) {
+    .navbar{
+        background-color: rgba(69, 69, 69, 0.581);
+    }
+}
+.nav-item a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 5px;
+    background-color: white;
+    transition:0.3s ;
+    -webkit-transition:0.3s ;
+    -moz-transition:0.3s ;
+    -ms-transition:0.3s ;
+    -o-transition:0.3s ;
+}
+.nav-item a:hover::before{
+   width: 80%;
+}
+.background-image-size{
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.header span::before{
+    content: "";
+    position: absolute;
+    height: 65px;
+    width: 2px;
+    bottom: 10px;
+    background-color: white;
+    right: 0px;
+}
+.icon-width{
+    width: 40px;
+    height: 40px;
+}
+.background-progress{
+    --bs-secondary-bg:rgba(228, 227, 227, 0.778);
+    box-shadow:  2px 4px 3px rgb(161, 161, 161) inset;
+    --bs-progress-bar-bg:#1c1c1c;
+    --bs-progress-height:30px;
+}
+.progress-bar{
+    text-align: end;
+}
+.about-image img{
+    width: 100%;
+}
+.btn-1 a{
+    background-color: var(--main-color-text);
+    color: white;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border: 1px solid var(--main-color-text);
+}
+.btns .btn-1 a:hover{
+background-color: white;
+color: var(--main-color-text);
+}
+.btn-2 a{
+    border: 1px solid var(--main-color-text);
+    color: var(--main-color-text);
+}
+.btns .btn-2 a:hover{
+    background-color: var(--main-color-text);
+    color:white;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    }
+    .title h2::before{
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: var(--main-color-text);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        bottom: 10px;
+        right: -15px;
+}
+.about-us::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color-text);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    bottom: 10px;
+    right: -15px;
+}
+.p-about{
+    font-size: 18px;
+}
+    .title h2::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 35px;
+      background-image: url("../images/dots.png");
+      background-repeat: repeat;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+}
+    .services .icon{
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        background-color: #ededed;
+        transition: var(--main-transition);
+        -webkit-transition: var(--main-transition);
+        -moz-transition: var(--main-transition);
+        -ms-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
+    }
+    .card-info:hover .icon{
+        color: white;
+        background-color: var(--main-color-text);
+    }
+    .portfolio .filter-bar span.active::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: var(--main-color-text);
+        bottom: 0;
+        left: 0;
+    }
+    .image-overlay{
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background: rgba(255, 255, 255, 0.95);
+        opacity: 0;
+        transition:  0.5s ease;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        -webkit-transition:  0.5s ease;
+        -moz-transition:  0.5s ease;
+        -ms-transition:  0.5s ease;
+        -o-transition:  0.5s ease;
+}
+   .img-container:hover .image-overlay {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .image-overlay h6{
+        letter-spacing: 2px;
+    }
+    .span-icon{
+        background-color: var(--main-color-text);
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 1px solid var(--main-color-text);
+}
+.span-icon a{
+    color: white;
+}
+.span-icon:hover a, .span-icon:hover{
+    color:var(--main-color-text);
+    background-color: white;
+}
+.carousel-image img{
+    width: 120px;
+    height: 120px;
+}
+.letter-space{
+    letter-spacing: 1px
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #727171;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.team-overlay{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    opacity: 0;
+    transition: var(--main-transition);
+    background-color: rgba(255, 255, 255, 0.921);
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.team-div{
+    width: 50px;
+    height: 50px;
+}
+.contact-div{
+    width:65px;
+    height:65px;
+}
+.team .card:hover .team-overlay{
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+.team-icons div:hover  {
+    background-color:white;
+}
+.team-icons div a{
+    color:white;
+}
+.team-icons div:hover a{
+    color: var(--main-color-text);
+}
+.team-iamge img{
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.team-iamge:hover img{
+scale: 1.2;
+}
+.contact-icon i{
+    color: var(--main-color-text);
+}
+.contact-icon{
+    background-color: #e3e3e36a;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.contact .box:hover .contact-icon{
+background-color: var(--main-color-text);
+}
+.contact .box:hover .contact-icon i{
+color: white;
+}
+input ,textarea{
+    background-color: #e3e3e36a;
+}
+textarea{
+    min-height: 200px;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #5a5959;
+    font-weight: 500;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+.contact-button{
+    background-color: var(--main-color-text);
+    transition: var(--main-transition);
+    color: white;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.contact-button:hover{
+    background-color: white;
+    color: var(--main-color-text);
+}
